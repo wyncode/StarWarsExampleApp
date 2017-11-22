@@ -1,5 +1,5 @@
 $.ajax({
-    url: "https://swapi.co/api/people",
+    url: 'https://swapi.co/api/people',
     dataType: 'json'
 }).done((result) => {
   const peopleArray = result.results;
@@ -19,7 +19,7 @@ $.ajax({
         for( item in person ){
           let key = item;
           let val = person[item];
-          let keyAry = ['homeworld', 'films', 'species', 'vehicles', 'starships', 'created', 'edited', 'url']
+          let keyAry = ['homeworld', 'films', 'species', 'vehicles', 'starships', 'created', 'edited', 'url'];
           if( keyAry.indexOf(key) === -1) {
             $('.results').append(
               `<dl>
@@ -33,3 +33,4 @@ $.ajax({
     }
   });
 });
+
