@@ -1,0 +1,1 @@
+This is a simple application demonstrating how to integrate with an API using jQuery. This app integrates with the Star Wars API: https://swapi.co/.
